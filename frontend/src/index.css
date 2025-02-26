@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "tongari";
+  src: url("./assets/fonts/Tongari-Regular-Webfont.woff2");
+}
+
 @theme {
-  
+  --become-the-best: url("./assets/images/become-the-best.jpg");
+  --font-tongari: "tongari";
+}
+
+.bg-become-the-best {
+  background-image: var(--become-the-best);
+}
+
+body{
+  font-family: var(--font-tongari);
+  background-color: black;
 }
